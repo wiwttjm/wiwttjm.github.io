@@ -3,7 +3,7 @@
 ---
 // Customization Variables
 
-$accent: #FF0F00;
+$accent: #DA5300;
 
 $max-width: 740px;
 $med-width: 600px;
@@ -14,7 +14,7 @@ $small-width: 480px;
 body {
     margin: 0;
     font-family: "Lucida Console";
-    background-color: #FFFFDD;
+    background-color: #F9FBE9;
     min-height: 100%;
 }
 a {
@@ -63,8 +63,14 @@ code {
 
     padding: 30px 0 20px 0;
     .site-title{
-        font-size: 32px;
-        color: #272727;
+        font-size: 38px;
+        color: #3A452B;
+        display: inline-block;
+    }
+
+    padding: 30px 0 20px 0;
+    .site-subtitle{
+        color: #3A452B;
         display: inline-block;
     }
 }
@@ -75,9 +81,9 @@ code {
     margin-bottom:1em;
     .title{
         max-width: 500px;
-        color: #272727;
+        color: #3A452B;
         display: inline-block;
-        font-size: 30px;
+        font-size: 24px;
     }
     .details{
         @extend .pull-right;
@@ -113,7 +119,7 @@ code {
 
 .footer{
     a {
-        color:black;
+        color: #3A452B;
     }
     text-align: center;
     font-size: small;

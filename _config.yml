@@ -22,3 +22,5 @@ navbar:
    link: "about"
  - name: "Contact"
    link: "contact"
+ - name: "Resources"
+   link: "resource"

@@ -11,7 +11,7 @@ layout: default
         <a class="title" href="{{site.baseurl}}{{ post.url }}">
             {{ post.title }}
         </a>
-
+<br>
         <div class="details">
             <b>{{ post.date | date: "%d %B %Y" }}</b>
             <br>
@@ -22,6 +22,7 @@ layout: default
                 {% endfor %}
                 <b>]</b>
             {% endif %}
+
         </div>
 
         <div class="subtitle">
@@ -29,6 +30,7 @@ layout: default
         </div>
     </div>
     {% if forloop.last == false %}
+<br>
     <hr>
     {% endif %}
     {% assign has_post = true %}
