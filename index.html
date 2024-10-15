@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
-  </body>
-</html>
+---
+layout: default
+---
+
+<nav id='sidebar'>
+	{% include nav.html %}
+</nav>
+
+<section id='content'>
+{% for post in site.posts %}
+  <article class='{{ post.type }}'>
+    <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.url_path }}</code> {% endif %}{{ post.title }}</h2></a>
+    <section class='body'>
+      {{ post.content }}
+    </section>
+  </article>
+{% endfor %}
+</section>
