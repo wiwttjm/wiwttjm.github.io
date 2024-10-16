@@ -24,3 +24,5 @@ navbar:
    link: "contact"
  - name: "Resources"
    link: "resource"
+ - name: "Tags"
+   link: "tag"
